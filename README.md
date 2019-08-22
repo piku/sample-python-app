@@ -10,7 +10,5 @@ To publish this app to `piku`, clone the repository and run the following comman
 
 ```bash
 git remote add piku piku@your_server:sample_python_app
-git add .
-git commit -a -m "initial commit"
 git push piku master
 ```
