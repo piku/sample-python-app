@@ -1,1 +1,1 @@
-print('This job is run every weekday at 6pm by uWSGI')
+print('This job is run every day at 6pm by uWSGI')
