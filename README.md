@@ -3,7 +3,8 @@
 This is a simple Python app that demonstrates:
 
 - HTTP port selection via the `PORT` variable (set in `ENV`)
-* An independent worker process (that is auto-restarted upon exit) 
+* An independent worker process (that is auto-restarted upon exit)
+* A daily scheduled worker that runs every day at 6PM
 * Another independent worker with a built-in scheduler
 
 To publish this app to `piku`, clone the repository and run the following commands:
