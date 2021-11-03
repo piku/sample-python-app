@@ -1,4 +1,5 @@
 import os
+import logging as log
 from bottle import default_app, route, request, view, static_file, run
 
 @route("/")
@@ -25,7 +26,7 @@ app = default_app()
 
 if __name__ == '__main__':
     log.debug("Beginning run.")
-    HTTP_PORT = int(environ.get('PORT', 8000))
-    BIND_ADDRESS = environ.get('BIND_ADDRESS', '127.0.0.1')
-    DEBUG = 'true' == environ.get('DEBUG', 'false').lower()
+    HTTP_PORT = int(os.environ.get('PORT', 8000))
+    BIND_ADDRESS = os.environ.get('BIND_ADDRESS', '127.0.0.1')
+    DEBUG = 'true' == os.environ.get('DEBUG', 'false').lower()
     run(host=BIND_ADDRESS, port=HTTP_PORT, debug=DEBUG)
